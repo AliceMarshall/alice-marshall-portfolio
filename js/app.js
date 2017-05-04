@@ -5,31 +5,28 @@ $(() => {
   const project3 = $('#proj3');
   const project4 = $('#proj4');
 
-  project1.mouseover(() => {
-    $("#description1").show();
-  });
-  project1.mouseout(() => {
-    $("#description1").hide();
-  });
+  const description1 = $('#description1');
+  const description2 = $('#description2');
+  const description3 = $('#description3');
+  const description4 = $('#description4');
 
-  project2.mouseover(() => {
-    $("#description2").show();
-  });
-  project2.mouseout(() => {
-    $("#description2").hide();
-  });
+  function mouseOver(project, description) {
+    project.mouseover(() => {
+      description.fadeIn('slow');
+    });
+  }
+  function mouseOut(project, description) {
+    project.mouseout(() => {
+      description.hide();
+    });
+  }
+  mouseOver(project1, description1);
+  mouseOver(project2, description2);
+  mouseOver(project3, description3);
+  mouseOver(project4, description4);
+  mouseOut(project1, description1);
+  mouseOut(project2, description2);
+  mouseOut(project3, description3);
+  mouseOut(project4, description4);
 
-  project3.mouseover(() => {
-    $("#description3").show();
-  });
-  project3.mouseout(() => {
-    $("#description3").hide();
-  });
-
-  project4.mouseover(() => {
-    $("#description4").show();
-  });
-  project4.mouseout(() => {
-    $("#description4").hide();
-  });
 })
