@@ -1,0 +1,154 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  padding: 0;
+  margin:0;
+  section {
+    float:left;
+    position:relative;
+    display:block;
+  }
+  .section-title {
+    height: 50vh;
+    width: 50%;
+    background-image: url('../images/background3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .title {
+      width: 70%;
+      right: 0;
+      position: absolute;
+      bottom: 0;
+      color: #0f0f0f;
+      padding:20px;
+      .main-logo {
+        height:85px;
+        margin:10px;
+        float:right;
+      }
+      h1 {
+        display:block;
+        letter-spacing:12px;
+        font-weight:300;
+        font-size:40px;
+        float:right;
+        margin:0;
+        margin-top:10px;
+        text-align:right;
+      }
+      h2 {
+        float:right;
+        margin:0;
+        margin-top:10px;
+        text-align:right;
+      }
+    }
+  }
+  .section-about {
+    height:50vh;
+    width:50%;
+    background-color:rgba(255,77,0,.75);
+    .about {
+      padding:20px;
+      float:right;
+      position:relative;
+      width:65%;
+      h2 {
+        margin:0;
+        text-align:right;
+      }
+      p {
+        text-align:right;
+        font-weight:600;
+        text-transform:none;
+        letter-spacing:1px;
+        font-size:14px;
+      }
+    }
+  }
+  .section-projects {
+    height:50vh;
+    width:50%;
+    background-color:rgba(255,77,0,.35);
+    .description {
+      padding:10px 20px;
+      padding-left:20px;
+      padding-top: 0;
+      float:left;
+      position:relative;
+      width:95%;
+      display:none;
+      p {
+        text-align: left;
+        font-weight: 600;
+        text-transform:none;
+        letter-spacing:1px;
+        font-size:13.5px;
+      }
+    }
+    .projects {
+      position:absolute;
+      bottom:0;
+      padding:20px;
+      h2 {
+        margin:0;
+      }
+      p {
+        letter-spacing:6px;
+        padding-top:10px;
+        a {
+          color:#000;
+          text-decoration:none;
+          &:hover {
+            color:#fff;
+            text-decoration:none;
+          }
+        }
+      }
+    }
+  }
+  .section-contact {
+    height:50vh;
+    width:50%;
+    background-color: #ff4d00;
+    .contact {
+      padding: 20px;
+      h2 {
+        margin-top: 0;
+      }
+      a {
+        width:5%;
+        margin-left: 5px;
+        color: #000;
+        i {
+          font-size: 32px;
+        }
+        &:hover {
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:910px) {
+  body {
+    .section-title {
+      height:50vh;
+      width:100%;
+    }
+    .section-projects {
+      height:50vh;
+      width:100%;
+    }
+    .section-about {
+      height:50vh;
+      width:100%;
+    }
+    .section-contact {
+      height:50vh;
+      width:100%;
+    }
+  }
+}
