@@ -123,6 +123,9 @@ body {
         color: #000;
         i {
           font-size: 32px;
+          &.fa-file-text-o {
+            font-size: 28px;
+          }
         }
         &:hover {
           color:#fff;

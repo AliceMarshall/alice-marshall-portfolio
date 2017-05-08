@@ -104,6 +104,8 @@ body {
         color: #000; }
         body .section-contact .contact a i {
           font-size: 32px; }
+          body .section-contact .contact a i.fa-file-text-o {
+            font-size: 28px; }
         body .section-contact .contact a:hover {
           color: #fff; }
 
