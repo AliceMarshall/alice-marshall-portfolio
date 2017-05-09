@@ -158,3 +158,40 @@ body {
     }
   }
 }
+@media only screen and (max-width:414px) {
+  body {
+    .section-title {
+      .title {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding-top: 0px;
+        .main-logo {
+          height:65px;
+        }
+        h1 {
+          font-size:20px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+    .section-about {
+      .about {
+        width:85%;
+      }
+    }
+  }
+}
+@media only screen and (max-width:375px) {
+  body {
+    .section-projects {
+      .projects {
+        p {
+          font-size: 14px;
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+}
