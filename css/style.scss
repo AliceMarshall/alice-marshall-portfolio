@@ -158,6 +158,26 @@ body {
     }
   }
 }
+@media only screen and (max-width:768px) {
+  body {
+    .section-title {
+      height:50vh;
+      width:100%;
+    }
+    .section-projects {
+      height:50vh;
+      width:100%;
+    }
+    .section-about {
+      height:50vh;
+      width:100%;
+    }
+    .section-contact {
+      height:50vh;
+      width:100%;
+    }
+  }
+}
 @media only screen and (max-width:414px) {
   body {
     .section-title {
