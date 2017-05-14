@@ -201,15 +201,24 @@ body {
         width:85%;
       }
     }
+    .section-projects {
+      .projects {
+        p {
+          font-size: 15px;
+          letter-spacing: 4px;
+          padding-top: 5px;
+        }
+      }
+    }
   }
 }
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:320px) {
   body {
     .section-projects {
       .projects {
         p {
-          font-size: 14px;
-          letter-spacing: 4px;
+          font-size: 12px;
+          letter-spacing: 3px;
         }
       }
     }

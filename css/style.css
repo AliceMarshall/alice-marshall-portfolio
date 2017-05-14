@@ -124,6 +124,19 @@ body {
   body .section-contact {
     height: 50vh;
     width: 100%; } }
+@media only screen and (max-width: 768px) {
+  body .section-title {
+    height: 50vh;
+    width: 100%; }
+  body .section-projects {
+    height: 50vh;
+    width: 100%; }
+  body .section-about {
+    height: 50vh;
+    width: 100%; }
+  body .section-contact {
+    height: 50vh;
+    width: 100%; } }
 @media only screen and (max-width: 414px) {
   body .section-title .title {
     width: 100%;
@@ -136,10 +149,14 @@ body {
     body .section-title .title h2 {
       font-size: 20px; }
   body .section-about .about {
-    width: 85%; } }
-@media only screen and (max-width: 375px) {
+    width: 85%; }
   body .section-projects .projects p {
-    font-size: 14px;
-    letter-spacing: 4px; } }
+    font-size: 15px;
+    letter-spacing: 4px;
+    padding-top: 5px; } }
+@media only screen and (max-width: 320px) {
+  body .section-projects .projects p {
+    font-size: 12px;
+    letter-spacing: 3px; } }
 
 /*# sourceMappingURL=style.css.map */
