@@ -1,5 +1,5 @@
 $(() => {
-  console.log('%c Web Developer: Seeking Opportunities ', 'background-color: #ff5700; color: #fff; font-size: 18px; padding: 4px 0;');
+  // console.log('%c Web Developer: Seeking Opportunities ', 'background-color: #ff5700; color: #fff; font-size: 18px; padding: 4px 0;');
   const project1 = $('#proj1');
   const project2 = $('#proj2');
   const project3 = $('#proj3');
