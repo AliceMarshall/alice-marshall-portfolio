@@ -1,26 +1,29 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   padding: 0;
   margin:0;
+  color: white;
   section {
     float:left;
     position:relative;
     display:block;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
   .section-title {
     height: 50vh;
     width: 50%;
-    background-image: url('../images/background3.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url('../images/topleft.png');
+    background-size: cover;
     .title {
       width: 70%;
       right: 0;
       position: absolute;
       bottom: 0;
-      color: #0f0f0f;
+      color: white;
       padding:20px;
       .main-logo {
         height:85px;
@@ -48,7 +51,8 @@ body {
   .section-about {
     height:50vh;
     width:50%;
-    background-color:rgba(255,77,0,.75);
+    background-image: url('../images/bottomleft.png');
+    background-size: cover;
     .about {
       padding:20px;
       float:right;
@@ -60,7 +64,7 @@ body {
       }
       p {
         text-align:right;
-        font-weight:600;
+        font-weight:800;
         text-transform:none;
         letter-spacing:1px;
         font-size:14px;
@@ -70,9 +74,9 @@ body {
   .section-projects {
     height:50vh;
     width:50%;
-    background-color:rgba(255,77,0,.35);
+    background-image: url('../images/topright.png');
+    background-size: cover;
     .description {
-      // background-color: lightblue;
       overflow: auto;
       padding:10px 20px;
       padding-left:20px;
@@ -84,9 +88,8 @@ body {
       display:none;
       p {
         text-align: left;
-        font-weight: 600;
+        font-weight: 800;
         text-transform:none;
-        letter-spacing:1px;
         font-size:13.5px;
       }
     }
@@ -98,13 +101,13 @@ body {
         margin:0;
       }
       p {
-        letter-spacing:6px;
+        letter-spacing:3px;
         padding-top:10px;
         a {
-          color:#000;
+          color:white;
           text-decoration:none;
           &:hover {
-            color:#fff;
+            color:black;
             text-decoration:none;
           }
         }
@@ -114,7 +117,8 @@ body {
   .section-contact {
     height:50vh;
     width:50%;
-    background-color: #ff4d00;
+    background-image: url('../images/bottomright.png');
+    background-size: cover;
     .contact {
       padding: 20px;
       h2 {
@@ -123,7 +127,7 @@ body {
       a {
         width:5%;
         margin-left: 5px;
-        color: #000;
+        color: white;
         i {
           font-size: 32px;
           &.fa-file-text-o {
@@ -131,7 +135,7 @@ body {
           }
         }
         &:hover {
-          color:#fff;
+          color: black;
         }
       }
     }
@@ -140,21 +144,13 @@ body {
 
 @media only screen and (max-width:910px) {
   body {
-    .section-title {
-      height:50vh;
-      width:100%;
-    }
-    .section-projects {
-      height:50vh;
-      width:100%;
-    }
-    .section-about {
-      height:50vh;
-      width:100%;
-    }
+    .section-title,
+    .section-projects,
+    .section-about,
     .section-contact {
       height:50vh;
       width:100%;
+      background-image: url('../images/topright.png');
     }
   }
 }
@@ -183,13 +179,12 @@ body {
     .section-title {
       .title {
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.8);
         padding-top: 0px;
         .main-logo {
           height:65px;
         }
         h1 {
-          font-size:20px;
+          font-size:28px;
         }
         h2 {
           font-size: 20px;
